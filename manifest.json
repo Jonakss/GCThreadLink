@@ -6,7 +6,9 @@
     {
       "matches" : [
         "https://chat.google.com/room/*",
-        "https://chat.google.com/u/0/room/*"
+        "https://chat.google.com/u/0/room/*",
+        "https://chat.google.com/room/*/*",
+        "https://chat.google.com/u/0/room/*/*"
       ],
       "js" : [
         "js/ThreadLink.js"
