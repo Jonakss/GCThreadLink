@@ -37,12 +37,11 @@ let addButton = function(){
 
 let threadListWrapper = document.getElementsByClassName("SvOPqd")[0];
 
+
 const observer = new MutationObserver(() => {
   addButton();
 });
-
-const observerOptions = { childList: true };
-
+const observerOptions = { attributes: true, childList: true, characterData: true, subtree: true };
 observer.observe(threadListWrapper, observerOptions);
 
 addButton();
