@@ -1,0 +1,16 @@
+{
+  "manifest_version" : 2,
+  "name" : "Google Chat Thread Link",
+  "version" : "0.1",
+  "content_scripts" : [
+    {
+      "matches" : [
+        "https://chat.google.com/room/*",
+        "https://chat.google.com/u/0/room/*"
+      ],
+      "js" : [
+        "js/ThreadLink.js"
+      ]
+    }
+  ]
+}
