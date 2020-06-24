@@ -1,4 +1,4 @@
-console.log("Google Chrome extension GCThreadLink loaded");
+console.log("GChat-Toolbox extension loaded - ThreadLink");
 
 let addButton = function(){
   let threads = document.getElementsByClassName("cZICLc");
@@ -35,12 +35,13 @@ let addButton = function(){
   };
 };
 
-let threadListWrapper = document.getElementsByClassName("SvOPqd")[0];
-
+let threadListWrapper = document.getElementsByClassName("Bqp03e")[1];
 
 const observer = new MutationObserver(() => {
   addButton();
+  console.log("Mutation");
 });
+
 const observerOptions = { attributes: true, childList: true, characterData: true, subtree: true };
 observer.observe(threadListWrapper, observerOptions);
 
